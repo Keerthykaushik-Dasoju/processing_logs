@@ -1,8 +1,12 @@
-import csv
+import csv, os
 
 # Read the lookup table and create a dictionary for tag mapping. This method is very flexible to any new fields or replacing current fields
 def read_tag_mapping(csv_filename):
     tag_mapping = {}
+
+    # Error handling: File Not Found
+    if not os.path.exists(csv_filename):
+        raise FileNotFoundError(f"File '{csv_filename}' not found.")
     # Open csv file with read mode
     with open(csv_filename, mode='r') as file:
         reader = csv.reader(file)
@@ -24,9 +28,14 @@ def read_tag_mapping(csv_filename):
     
     return tag_mapping
 
-# Read the protocol number mapping csv dile and create a dictionary for the mapping
+# Read the protocol number mapping csv file and generating a dictionary for the mapping between protocol number and protocol
 def read_protocol_number_mapping(csv_filename):
     protocol_number_mapping = {}
+
+    # Error handling: File Not Found
+    if not os.path.exists(csv_filename):
+        raise FileNotFoundError(f"File '{csv_filename}' not found.")
+    
     # Open csv file with read mode
     with open(csv_filename, mode='r') as file:
         reader = csv.reader(file)

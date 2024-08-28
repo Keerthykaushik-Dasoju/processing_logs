@@ -1,11 +1,16 @@
 from collections import Counter
 from log_line_parser import extract_dstport_and_protocol
+import os
 
 # Parse the log file to get tag counts and port, protocol combination counts
 def process_log_file(log_filename, tag_mapping, field_index_map, protocol_number_mapping):
     tag_counter = Counter()
     port_proto_comb_counter = Counter()
     dstport_index, protocol_index = field_index_map['dstport'], field_index_map['protocol']
+    
+    # Error handling: File Not Found
+    if not os.path.exists(log_filename):
+        raise FileNotFoundError(f"File '{log_filename}' not found.")
     # Open log file with read mode
     with open(log_filename, mode='r') as log_file:
         for line in log_file:
