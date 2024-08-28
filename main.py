@@ -1,3 +1,4 @@
+import sys
 from csv_reader import read_tag_mapping, read_protocol_number_mapping
 from log_processor import process_log_file
 from log_line_parser import load_log_format
@@ -23,4 +24,6 @@ def main(custom_log_format=None):
     write_results_to_file(tag_counts, port_proto_comb_counts)
 
 if __name__ == "__main__":
-    main()
+    # Accept an optional custom log format file as a command-line argument
+    custom_log_format = sys.argv[1] if len(sys.argv) > 1 else None
+    main(custom_log_format)
