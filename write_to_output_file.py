@@ -1,5 +1,5 @@
 # Write result to an output file
-def write_results_to_file(tag_counts, port_proto_comb_counts, output_filename='output.txt'):
+def write_results_to_file(tag_counts, port_proto_comb_counts, output_filename='data/output.txt'):
     # Open the output file with write mode
     with open(output_filename, mode='w') as file:
         # Write count of matches for each tag to the output file
