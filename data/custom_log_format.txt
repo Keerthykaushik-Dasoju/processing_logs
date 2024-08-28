@@ -1,1 +1,1 @@
-protocol version account-id interface-id srcport dstport
+version account-id interface-id srcport dstport protocol 

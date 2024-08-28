@@ -8,7 +8,7 @@
 
    ```bash
     .
-    ├── Data                              # Data files directory
+    ├── data                              # Data files directory
     │   ├── default_log_format.txt        # Default log format file
     │   ├── custom_log_format.txt         # Custom log format file (optional)
     │   ├── protocol_number_mapping.csv   # CSV file with protocol-to-number mapping
@@ -54,3 +54,15 @@ Before running the project, ensure to have "Python 3.x" installed
 3. **View the Results**
 
     The results will be written to an output file ("output.txt") in the data directory. This output file will contain tag counts and port-prototcol combinations count
+
+
+TODO:
+
+1. why python
+2. assumptions as following
+3. case sensitivity
+4. works with any type of log format
+5. tag mapping code can be reusable for future additions or replacements
+6. just added mostly used protocol numbers in the protocol number mapping can add more to that in the future
+7. what test are done
+8. analysis on my code
