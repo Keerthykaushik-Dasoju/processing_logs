@@ -8,19 +8,25 @@
 
    ```bash
     .
-    ├── data                              # Data files directory
-    │   ├── default_log_format.txt        # Default log format file
-    │   ├── custom_log_format.txt         # Custom log format file (optional)
-    │   ├── protocol_number_mapping.csv   # CSV file with protocol-to-number mapping
-    │   ├── tag_mapping.csv               # CSV file with tag mapping
-    │   ├── output.txt                    # Output file containing final results
-    │   └── log_file.log                  # Sample log file to be processed
-    ├── main.py                           # Main script to run the project
-    ├── csv_reader.py                     # Handles CSV file reading and processing
-    ├── log_processor.py                  # Processes log files and counts occurrences
-    ├── log_line_parser.py                # Extracts fields from log lines
-    ├── write_to_output_file.py           # Writes results to an output file
-    └── README.md                         # Project documentation
+    ├── data                                        # Data files directory
+    │   ├── default_log_format.txt                  # Default log format file
+    │   ├── custom_log_format.txt                   # Custom log format file (optional)
+    │   ├── protocol_number_mapping.csv             # CSV file with protocol-to-number mapping
+    │   ├── tag_mapping.csv                         # CSV file with tag mapping
+    │   ├── output.txt                              # Output file containing final results
+    │   └── log_file.log                            # Sample log file to be processed
+    ├── src                                         # Src directory containing code files
+    │   ├── main.py                                 # Main script to run the project
+    │   ├── csv_reader.py                           # Handles CSV file reading and processing
+    │   ├── log_processor.py                        # Processes log files and counts occurrences
+    │   ├── log_line_parser.py                      # Extracts fields from log lines
+    │   └── write_to_output_file.py                 # Writes results to an output file
+    ├── tests                                       # Tests directory containing unittest files
+    │   ├── tests_csv_reader.py                     # Unit tests for csv reader
+    │   ├── tests_log_processor.py                  # Unit tests for log processor
+    │   ├── tests_log_line_parser.py                # Unit tests for log line parser
+    │   └── tests_write_to_output_file.py           # Unit tests for write to output file
+    └── README.md                                   # Project documentation
    ```
 
 ## Prerequisites
