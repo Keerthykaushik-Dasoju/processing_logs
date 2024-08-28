@@ -28,6 +28,7 @@
 Before running the project, ensure to have "Python 3.x" installed
 
 ## Instructions to Setup and Run
+
 1. **Clone the repository:**
 
    ```bash
@@ -44,7 +45,7 @@ Before running the project, ensure to have "Python 3.x" installed
     python main.py
     ```
 
-    Using Custom Log Format (update custome_log_format.txt with the format you want to use)
+    Using Custom Log Format (update custom_log_format.txt with the format you want to use)
 
     ```bash
     python main.py data/custom_log_format.txt
