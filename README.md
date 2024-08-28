@@ -3,10 +3,25 @@
 ## Overview
 
 **Processing Logs** is a Python-based project designed to process log files, map dstport and protocols to tags, and analyze port-protocol combinations. The project is structured to handle different log formats.
-
+    
 ## Project Structure
 
-processing-logs/ │ ├── main.py # Main script to run the project ├── csv_reader.py # Handles CSV file reading and processing ├── log_processor.py # Processes log files and counts occurrences ├── log_line_parser.py # Extracts fields from log lines ├── write_to_output_file.py # Writes results to an output file └── data/ # Data files directory ├── default_log_format.txt # Default log format file ├── custom_log_format.txt # Custom log format file (optional) ├── protocol_number_mapping.csv # CSV file with protocol-to-number mapping ├── tag_mapping.csv # CSV file with tag mapping ├── output.txt # Output file containing final results └── log_file.log # Sample log file to be processed
+   ```bash
+    .
+    ├── Data                              # Data files directory
+    │   ├── default_log_format.txt        # Default log format file
+    │   ├── custom_log_format.txt         # Custom log format file (optional)
+    │   ├── protocol_number_mapping.csv   # CSV file with protocol-to-number mapping
+    │   ├── tag_mapping.csv               # CSV file with tag mapping
+    │   ├── output.txt                    # Output file containing final results
+    │   └── log_file.log                  # Sample log file to be processed
+    ├── main.py                           # Main script to run the project
+    ├── csv_reader.py                     # Handles CSV file reading and processing
+    ├── log_processor.py                  # Processes log files and counts occurrences
+    ├── log_line_parser.py                # Extracts fields from log lines
+    ├── write_to_output_file.py           # Writes results to an output file
+    └── README.md                         # Project documentation
+   ```
 
 ## Prerequisites
 
