@@ -1,0 +1,14 @@
+protocol,number
+icmp,1
+ipv4,4
+tcp,6
+udp,17
+ipv6,41
+gre,47
+esp,50
+ah,51
+icmpv6,58
+eigrp,88
+ospf,89
+pim,103
+sctp,132
