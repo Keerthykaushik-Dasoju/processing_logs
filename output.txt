@@ -1,0 +1,27 @@
+Count of matches for each tag, sample o/p shown below
+
+Tag Counts:
+Tag, Count
+Untagged, 8
+sv_P2, 1
+sv_P1, 2
+email, 3
+
+Count of matches for each port/protocol combination
+
+Port/Protocol Combination Counts:
+Port,Protocol,Count
+tcp, 49153, 1
+tcp, 49154, 1
+tcp, 49155, 1
+tcp, 49156, 1
+tcp, 49157, 1
+tcp, 49158, 1
+tcp, 80, 1
+tcp, 1024, 1
+tcp, 443, 1
+tcp, 23, 1
+tcp, 25, 1
+tcp, 110, 1
+tcp, 993, 1
+tcp, 143, 1

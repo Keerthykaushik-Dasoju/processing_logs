@@ -1,6 +1,7 @@
 from csv_reader import read_tag_mapping, read_protocol_number_mapping
 from log_processor import process_log_file
 from log_line_parser import load_log_format
+from write_to_output_file import write_results_to_file
 
 def main(custom_log_format=None):
     # Read the CSV file and create the tag mapping
@@ -18,9 +19,8 @@ def main(custom_log_format=None):
     # Process the log file and count tags
     tag_counts, port_proto_comb_counts = process_log_file('log_file.log', tag_mapping, field_index_map, protocol_number_mapping)
 
-    print(tag_counts)
-    print()
-    print(port_proto_comb_counts)
+    # Writing result to an output file
+    write_results_to_file(tag_counts, port_proto_comb_counts)
 
 if __name__ == "__main__":
     main()

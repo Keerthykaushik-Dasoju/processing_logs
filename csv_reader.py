@@ -1,11 +1,13 @@
 import csv
 
+# Read the lookup table and create a dictionary for tag mapping. This method is very flexible to any new fields or replacing current fields
 def read_tag_mapping(csv_filename):
     tag_mapping = {}
+    # Open csv file with read mode
     with open(csv_filename, mode='r') as file:
         reader = csv.reader(file)
         headers = next(reader) # For skipping the header
-        
+
         # Determine the index of the tag column
         tag_index = headers.index('tag')
         
@@ -22,8 +24,10 @@ def read_tag_mapping(csv_filename):
     
     return tag_mapping
 
+# Read the protocol number mapping csv dile and create a dictionary for the mapping
 def read_protocol_number_mapping(csv_filename):
     protocol_number_mapping = {}
+    # Open csv file with read mode
     with open(csv_filename, mode='r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip the header row
