@@ -48,13 +48,21 @@ Before running the project, ensure to have "Python 3.x" installed
     Using Default Log Format
 
     ```bash
-    python main.py
+    For Mac and Linux
+    python src/main.py
+
+    For Windows
+    python .\src\main.py
     ```
 
     Using Custom Log Format (update custom_log_format.txt with the format you want to use)
 
     ```bash
-    python main.py data/custom_log_format.txt
+    For Mac and Linux
+    python src/main.py data/custom_log_format.txt
+
+    For Windows
+    python .\src\main.py .\data\custom_log_format.txt
     ```
 
 3. **View the Results**
